@@ -1,5 +1,6 @@
 #ive never made a program before so this is probs riddled with mistakes
-#THIS IS ONLY FOR MAKING A SLOW TO FAST SLOWDOWN OR SLOW TO FAST UPRISE
+#i think if ur not dumb with the inputs it should work fine?
+
 import math
 bruh = input("Press 1 for Slow to Fast Slowdown/Uprise. \nPress 2 for Fast to Slow Slowdown/Uprise. \n")
 if bruh == "1":
