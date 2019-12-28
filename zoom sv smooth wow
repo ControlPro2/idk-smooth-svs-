@@ -1,8 +1,8 @@
 #ive never made a program before so this is probs riddled with mistakes
-#i think if ur not dumb with the inputs it should work fine?
+#i think if ur not dumb with the inputs it should work fine
 
 import math
-bruh = input("Press 1 for Slow to Fast Slowdown/Uprise. \nPress 2 for Fast to Slow Slowdown/Uprise. \n")
+bruh = input("Press 1 for Slow to Fast Slowdown/Uprise. \nPress 2 for Fast to Slow Slowdown/Uprise. \nPress 3 for Linear lol \n")
 if bruh == "1":
     StartSV = float(input("what's the starting sv: "))
     EndSV = float(input("what's the ending sv: "))
@@ -30,3 +30,20 @@ if bruh == "2":
         SV = SVRange * math.sin(0.5 * math.pi * (x / NoteAmount) + math.pi / 2 + 0.5 * math.pi) + StartSV
         x = x + 1
         print(x, SV)
+
+if bruh == "3":
+    StartSV = float(input("what's the starting sv: "))
+    EndSV = float(input("what's the ending sv: "))
+    NoteAmount = float(input("how many notes are there: "))
+    NoteAmount = NoteAmount - 1
+    SVRange = EndSV - StartSV
+    SV = 1000
+    x = 1
+    print (x, StartSV)
+    while x != NoteAmount + 1:
+        SV = (x / NoteAmount) * SVRange + StartSV
+        x = x + 1
+        print(x, SV)
+
+else:
+    print("retard")
